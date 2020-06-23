@@ -8,7 +8,7 @@
 
 ### Backend com autenticação JWT
 
-> autenticação com token de segurança e cripttografia de senha
+> autenticação com token de segurança e criptografia de senha
 
 - ### Ferramentas :hammer:
   - [Express](https://expressjs.com/pt-br/)
