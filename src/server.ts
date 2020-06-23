@@ -6,7 +6,7 @@ import routes from "./routes";
 const app = express();
 
 connect(
-  "mongodb+srv://ryannqwe:19735@ryanncluster-jntrn.mongodb.net/teste?retryWrites=true&w=majority",
+  "mongodb+srv://ryannqwe:19735@ryanncluster-jntrn.mongodb.net/jwt?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
