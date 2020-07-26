@@ -13,6 +13,18 @@ const UserSchema = new Schema(
       type: String,
       required: true,
     },
+    holder: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Pai",
+      },
+    ],
+    childs: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Pai",
+      },
+    ],
     email: {
       type: String,
       required: true,
@@ -24,8 +36,8 @@ const UserSchema = new Schema(
       type: String,
       required: true,
       select: false,
-      set: (value: string) =>
-        crypto.createHash("md5").update(value).digest("hex"),
+      set: (password: string) =>
+        crypto.createHash("md5").update(password).digest("hex"),
     },
   },
   {
